@@ -3,6 +3,7 @@
     width: 500px;
     height: 400px;
     padding: 20px;
+    margin: 45px;
     transition: transform 100ms;
 }
 .videocard > img {
@@ -18,5 +19,6 @@
 
 .videocard > h2 {
     padding-top:10px;
+    padding-bottom:10px;
     
 }
