@@ -15,7 +15,15 @@ function VideoCard({movie}) {
                 truncateText="  ..."
                 text={movie.overview}
             />
-            <h2>{movie.title}</h2>
+            <h2>{movie.title || movie.original_name}</h2>
+            <p className='videoCard__stats'>
+
+                {movie.media_type && `${movie.media_type}•`}
+                {movie.release_Date || movie.first_air_date} •
+
+                {/* <ThumbUpSharp /> */}
+                {/* {movie.vote_count} */}
+            </p>
         </div>
     )
 }
